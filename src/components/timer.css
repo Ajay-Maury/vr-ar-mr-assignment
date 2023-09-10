@@ -1,0 +1,189 @@
+.TimerPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background: transparent;
+    color: #fff;
+    font-size: 23px;
+  }
+  
+  .TimerTextContainer {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .TimerTextInhale {
+    opacity: 0;
+    animation: fadeOut 4s linear forwards;
+  }
+  
+  .TimerTextHold {
+    opacity: 0;
+    animation: fadeOut 3s linear 3s forwards;
+  }
+  
+  .TimerTextExhale {
+    opacity: 0;
+    animation: fadeOut 3s linear 5s forwards;
+  }
+  
+  .TimerText {
+    font-size: 16px;
+  }
+  
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+  
+    10% {
+      opacity: 0.5;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    90% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .Circle3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    animation: circle-animation 1s linear forwards, circle-3-fadeOut-animation 0.5s linear 1s forwards, circle-end-fadeOut 1s linear 8s forwards;
+    border: 2px solid #fff;
+  }
+  
+  
+  .Circle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    animation: circle-animation 1s linear 1s forwards, circle-2-fadeOut-animation 0.5s linear 2s forwards, circle-end-fadeOut 1s linear 7s forwards;
+    border: 2px solid #fff;
+    opacity: 0;
+  }
+  
+  
+  .Circle1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    animation: circle-animation 1s linear 2s forwards, circle-shrink-animation 4s linear 3s forwards;
+    border: 2px solid #fff;
+    opacity: 0;
+  }
+  
+  @keyframes circle-animation {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0;
+    }
+  
+    70% {
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes circle-3-fadeOut-animation {
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes circle-2-fadeOut-animation {
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes circle-shrink-animation {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  
+    25% {
+      transform: translate(-50%, -50%) scale(1.05);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 1;
+    }
+  
+    75% {
+      transform: translate(-50%, -50%) scale(1.05);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes circle-end-fadeOut {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  
+    40% {
+      transform: translate(-50%, -50%) scale(0.95);
+      opacity: 0.5;
+    }
+  
+    80% {
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 0;
+    }
+  }

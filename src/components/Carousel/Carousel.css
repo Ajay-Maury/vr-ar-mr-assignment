@@ -1,0 +1,55 @@
+.carousel-main{
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.noDisplay{
+    display: none;
+}
+
+.eclipseDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.eclipseDiv span{
+    text-align: center;
+}
+
+.eclipseImgDiv{
+    display: flex;
+}
+.eclipseImg{
+    display: none;
+}
+
+.groupImg1{
+    height: 0.125rem;
+    width: 1.5rem;
+    margin-top: 0.35rem;
+}
+.groupImg2{
+    height: 0.125rem;
+    width: 1.5rem;
+    margin-top: 1rem;
+}
+
+.profileDiv{
+    display: flex;
+    position: relative;
+}
+.profileImg{
+    width: 2rem;
+}
+
+.profileName{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+}

@@ -1,11 +1,10 @@
-
-import Carousel from "./Carousel";
-import  "./Task2.css"
+import Carousel from "@/components/Carousel/Carousel";
+import "./Page2.css"
 import { CgClose } from 'react-icons/cg';
 
 
 
-const DigitalInterface = () => {
+const Page2 = () => {
   return (
     <div className='MainContainer'>
       <div className="Container">
@@ -24,4 +23,4 @@ const DigitalInterface = () => {
   );
 };
 
-export default DigitalInterface;
+export default Page2;

@@ -72,8 +72,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0.7);
     animation: circle-animation 1s linear forwards, circle-3-fadeOut-animation 0.5s linear 1s forwards, circle-end-fadeOut 1s linear 8s forwards;
@@ -85,8 +85,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0.7);
     animation: circle-animation 1s linear 1s forwards, circle-2-fadeOut-animation 0.5s linear 2s forwards, circle-end-fadeOut 1s linear 7s forwards;
@@ -99,8 +99,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0.7);
     animation: circle-animation 1s linear 2s forwards, circle-shrink-animation 4s linear 3s forwards;

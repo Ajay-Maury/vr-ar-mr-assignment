@@ -1,8 +1,7 @@
 'use client'
-import BackgroundVideo from "@/components/BackgroundVideo";
-import Task2 from "@/components/Task2";
-import Timer from "@/components/Timer";
 import { useState, useEffect } from "react";
+import Page1 from "./task1/Page1";
+import Page2 from "./task2/Page2";
 
 
 export default function Home() {
@@ -22,10 +21,9 @@ export default function Home() {
     <div>
       {seconds < 8 ?
         <>
-          <BackgroundVideo />
-          <Timer />
+        <Page1/>
         </> :
-        <Task2 />
+        <Page2 />
       }
     </div>
   )

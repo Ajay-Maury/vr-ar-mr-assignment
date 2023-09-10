@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import '@/components/timer.css'
+import './Timer.css'
 
 const Timer = () => {
   const [seconds, setSeconds] = useState(0);
